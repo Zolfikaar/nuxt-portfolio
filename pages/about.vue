@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Welcome to Koko Page</h1>
+    <h1>About Page</h1>
   </div>
 </template>
 

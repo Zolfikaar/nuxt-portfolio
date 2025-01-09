@@ -1,7 +1,7 @@
 <template>
   <div class="container mx-auto max-w-2xl">
 
-    <header class="flex justify-between items-center mt-5">
+    <header class="flex justify-between items-center mt-5 mb-7">
       <div>
         <NuxtLink to="/" class="text-xl p-1 font-semibold hover:bg-gray-200">
           Tholfikar Mohammed
