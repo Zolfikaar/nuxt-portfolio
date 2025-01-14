@@ -6,14 +6,14 @@ definePageMeta({
 })
 
 useSeoMeta({
-  ogTitle: 'Tholfikar Moh. Portfolio',
-  ogDescription: 'My Portfolio',
-  ogImage: '[og:image]',
-  ogUrl: '[og:url]',
-  twitterTitle: 'Tholfikar Moh. Portfolio',
-  twitterDescription: 'My Portfolio',
-  twitterImage: '[twitter:image]',
-  twitterCard: 'summary'
+  // ogTitle: 'Tholfikar Moh. Portfolio',
+  // ogDescription: 'My Portfolio',
+  // ogImage: '[og:image]',
+  // ogUrl: '[og:url]',
+  // twitterTitle: 'Tholfikar Moh. Portfolio',
+  // twitterDescription: 'My Portfolio',
+  // twitterImage: '[twitter:image]',
+  // twitterCard: 'summary'
 })
 
 useHead({
@@ -37,4 +37,3 @@ useHead({
 
   </div>
 </template>
-

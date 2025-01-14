@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from 'vue';
+import { ref, onMounted } from 'vue';
 import { useRouter } from 'vue-router';
 
 const activeLink = ref('/');
@@ -12,6 +12,10 @@ router.afterEach((to) => {
 const setActiveLink = (path) => {
   activeLink.value = path;
 };
+
+onMounted(() => {
+  activeLink.value = router.currentRoute.value.path;
+})
 </script>
 
 <template>
@@ -22,16 +26,25 @@ const setActiveLink = (path) => {
           Home
         </NuxtLink>
       </li>
+
+      <li>
+        <NuxtLink to="/projects" class="link"
+          :class="{ active: activeLink === '/projects' || activeLink.includes('/project') }"
+          @click="setActiveLink('/projects')">
+          Projects
+        </NuxtLink>
+      </li>
+      <li>
+        <NuxtLink to="/blog" class="link" :class="{ active: activeLink === '/blog' || activeLink.includes('/blog') }"
+          @click="setActiveLink('/blog')">
+          Blog
+        </NuxtLink>
+      </li>
+
       <li>
         <NuxtLink to="/about" class="link" :class="{ active: activeLink === '/about' }"
           @click="setActiveLink('/about')">
           About
-        </NuxtLink>
-      </li>
-      <li>
-        <NuxtLink to="/projects" class="link" :class="{ active: activeLink === '/projects' }"
-          @click="setActiveLink('/projects')">
-          Projects
         </NuxtLink>
       </li>
     </ul>

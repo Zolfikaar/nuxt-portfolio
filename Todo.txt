@@ -1,0 +1,9 @@
+1- Complete the project with Piotr.
+2- While you are at it, also read the documentation.
+3- After complete the project, startadding new (custom) features which are:
+    - Create a project page showing more details about the project, incluing a (more detailed description, an outside preview link, list of the tools the project built with, and so on).
+    - Add a backend dashboard with authentication (only login for now).
+    - In the dashboard i can have full controll of what project (repository) should be hidden/visiable.
+    - In the dashboard i can arrange the order of the projects (Ascendingly, descendingly) based on the star counts, date of createtion, date of modification, or manualyl (drag & drop).
+    - In the dashboard i can see the total number of projects, total number of hidden projects, total number of visible projects, total number of stars, total number of views, total number of likes, total number of comments, and so on.
+    
