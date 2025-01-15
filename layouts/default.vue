@@ -3,12 +3,14 @@
 
     <header class="flex justify-between items-center mt-5 mb-7">
       <div>
-        <NuxtLink to="/" class="text-xl p-1 font-semibold hover:bg-gray-200">
+        <NuxtLink to="/" class="text-xl p-1 font-semibold ">
           Tholfikar Mohammed
         </NuxtLink>
       </div>
 
       <Menu />
+
+      <ThemeToggler />
     </header>
 
     <main class="p-2">
@@ -52,4 +54,9 @@ useHead({
 body{
   font-family: 'Roboto';
 }
+
+body {
+  @apply bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-300;
+}
+
 </style>

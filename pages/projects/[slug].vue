@@ -18,8 +18,8 @@ const repo = ref(data.value.filter(repo => repo.name == route.params.slug)[0])
   <div v-else>
     <div>Repo name: {{ repo.name }}</div>
     <p>Repo description: {{ repo.description }}</p>
-    <div>Repo created at: {{ repo.created_at }}</div>
-    <div>Repo updated at: {{ repo.updated_at }}</div>
+    <div>Repo created at: {{ repo.created_at.split("T")[0] }}</div>
+    <div>Repo updated at: {{ repo.updated_at.split("T")[0] }}</div>
     <a :href="repo.deployments_url">Live Preview</a>
   </div>
 

@@ -49,3 +49,6 @@ yarn preview
 ```
 
 # nuxt-portfolio
+
+I build this project using:
+Nuxt, Vue, Boxicons, TypeScript, Tailwind CSS

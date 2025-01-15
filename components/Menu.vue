@@ -21,11 +21,11 @@ onMounted(() => {
 <template>
   <nav class="font-mono">
     <ul class="flex space-x-4">
-      <li>
+      <!-- <li>
         <NuxtLink to="/" class="link" :class="{ active: activeLink === '/' }" @click="setActiveLink('/')">
           Home
         </NuxtLink>
-      </li>
+      </li> -->
 
       <li>
         <NuxtLink to="/projects" class="link"
@@ -56,7 +56,11 @@ onMounted(() => {
   @apply p-1 hover:bg-gray-200;
 }
 
+.link:hover {
+  @apply dark:text-gray-900;
+}
+
 .active {
-  @apply bg-gray-200;
+  @apply bg-gray-200 dark:text-gray-900;
 }
 </style>
